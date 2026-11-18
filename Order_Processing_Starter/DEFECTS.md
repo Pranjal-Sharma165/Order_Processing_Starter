@@ -71,3 +71,20 @@
 **Corrections:**
 - Removed the statement that printed the payment token.
 - Prevented sensitive payment information from being unnecessarily exposed through console logging.
+
+## Test Results
+
+All unit tests were executed successfully using pytest.
+
+**Command:**
+```bash
+cd Order_Processing_Starter
+python -m pytest -q
+```
+
+**Result:** All 42 tests passed successfully with 0 failures.
+![alt text](image.png)
+
+The test suite covers cart operations, repository functionality, checkout processing, and the original smoke tests.
+
+GitHub Actions was also configured to automatically run the test suite on every push and pull request. The workflow completed successfully.
